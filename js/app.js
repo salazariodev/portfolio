@@ -103,6 +103,5 @@ ScrollReveal({
 
 
 
-ScrollReveal().reveal('.home-content, .home-content p, .about-content, .heading', { origin: 'top' });
-ScrollReveal().reveal('.home-img, .services-container, .portfolio-box, .contact form', { origin: 'bottom' });
-ScrollReveal().reveal('.home-content h1, .about-content p, .about-img', { origin: 'left' });
+ScrollReveal().reveal('.home-img, .services-container, .portfolio-box, .contact form, .about-img', { origin: 'bottom' });
+ScrollReveal().reveal('.home-content, .home-content p, .about-content, .heading, .home-content h1, .about-content p, .heading h2', { origin: 'left' });

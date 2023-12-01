@@ -362,7 +362,7 @@ span {
 .send-button {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center;    
 }
 
 .footer {
@@ -425,6 +425,10 @@ span {
 
     .contact {
         min-height: auto;        
+    }
+
+    .send-button {
+        padding-bottom: 4rem;
     }
 
     .footer {
