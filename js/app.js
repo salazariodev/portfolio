@@ -28,6 +28,11 @@ function sendMessage() {
     emailjs.send(serviceId, templateId, params)
         .then(res => {
             Swal.fire("Your message has been sent successfully!");
+
+            document.querySelector("#username").value = "";
+            document.querySelector("#email").value = "";
+            document.querySelector("#subject").value = "";
+            document.querySelector("#message").value = "";
         })
         .catch(error => {
             Swal.fire({
