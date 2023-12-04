@@ -115,12 +115,13 @@ ScrollReveal().reveal('.home-content, .home-content p, .about-content, .heading,
 
 
 
-const modal = document.getElementById('webDevelopmentModal');
 
-  function openModal() {
-    modal.style.display = 'block';
+function openModal(modalId) {
+    document.getElementById(modalId).style.display = 'block';
   }
-
+  
   function closeModal() {
-    modal.style.display = 'none';
+    document.querySelectorAll('.modal').forEach(function(modal) {
+      modal.style.display = 'none';
+    });
   }

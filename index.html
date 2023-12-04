@@ -63,6 +63,7 @@
           <img src="./assets/img/hero.webp" alt="Juan Salazar" />
         </div>
       </section>
+
       <section class="about" id="about">
         <div class="about-img">
           <img src="./assets/img/hero.webp" alt="Juan Salazar" />
@@ -91,6 +92,7 @@
           <a href="#contact" class="btn">Contact Me</a>
         </div>
       </section>
+
       <section class="services" id="services">
         <h2 class="heading">My <span>Services</span></h2>
         <div class="services-container">
@@ -100,7 +102,12 @@
             <p>
               <span>I transform your ideas into digital experiences.</span>
             </p>
-            <a href="#services" class="btn" onclick="openModal()">Read More</a>
+            <a
+              href="#services"
+              class="btn"
+              onclick="openModal('webDevelopmentModal')"
+              >Read More</a
+            >
           </div>
           <div class="services-box">
             <i class="fas fa-paintbrush"></i>
@@ -108,7 +115,9 @@
             <p>
               <span>Captivate effortlessly with unique web design.</span>
             </p>
-            <a href="#" class="btn">Read More</a>
+            <a href="#services" class="btn" onclick="openModal('designModal')"
+              >Read More</a
+            >
           </div>
           <div class="services-box">
             <i class="fas fa-arrows-alt"></i>
@@ -116,17 +125,23 @@
             <p>
               <span>Migrate smoothly and with confidence.</span>
             </p>
-            <a href="#" class="btn">Read More</a>
+            <a
+              href="#services"
+              class="btn"
+              onclick="openModal('webMigrationModal')"
+              >Read More</a
+            >
           </div>
         </div>
       </section>
+
       <div id="webDevelopmentModal" class="modal">
         <div class="modal-content">
           <span class="close" onclick="closeModal()">&times;</span>
           <div class="modal-container">
             <div class="modal-image">
               <img
-                src="./assets/img/webDevelopmentModal.webp"
+                src="./assets/img/webDevelopment.webp"
                 alt="Descripción de la imagen"
               />
             </div>
@@ -146,6 +161,65 @@
           </div>
         </div>
       </div>
+
+      <div id="designModal" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal()">&times;</span>
+          <div class="modal-container">
+            <div class="modal-image">
+              <img
+                src="./assets/img/websiteDesign.webp"
+                alt="Descripción de la imagen"
+              />
+            </div>
+            <div class="modal-text">
+              <h2><span>Unleashing</span> Distinctive Web Designs</h2>
+              <p>
+                Each design has a purpose. From intuitive navigation to
+                user-centered design, I create websites that not only look good
+                but also provide exceptional experiences for your visitors.
+              </p>
+              <p>
+                Web design adaptable to all devices. Whether on desktop, tablet,
+                or mobile phone, I guarantee a consistent experience that
+                captivates your audience on any screen.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="webMigrationModal" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal()">&times;</span>
+          <div class="modal-container">
+            <div class="modal-image">
+              <img
+                src="./assets/img/websiteMigration.webp"
+                alt="Descripción de la imagen"
+              />
+            </div>
+            <div class="modal-text">
+              <h2>
+                <span>Effortless</span> Website Migration and Updates with
+                Confidence
+              </h2>
+              <p>
+                I optimize your online presence. Migrating your website is not
+                just a server change but a performance upgrade. I ensure your
+                site runs faster and better than ever.
+              </p>
+              <p>
+                Your website, my responsibility. With advanced security
+                protocols, I manage the migration of your website securely to
+                protect your data and maintain the continuity of your online
+                presence.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <section class="portfolio" id="portfolio">
         <h2 class="heading">Latest <span>Project</span></h2>
         <div class="portfolio-container">
@@ -223,6 +297,7 @@
           </div>
         </div>
       </section>
+
       <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me!</span></h2>
         <form id="contact-form">
