@@ -14,6 +14,7 @@
       sizes="16x16"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/modal.css" />
     <script delay src="https://unpkg.com/scrollreveal@4"></script>
     <script
       src="https://kit.fontawesome.com/cedb9ed75e.js"
@@ -49,10 +50,12 @@
             Let's collaborate and turn your digital ideas into reality!
           </p>
           <div class="social-media">
-            <a href="https://github.com/salazarioDev" target="_blank"><i class="fa-brands fa-github"></i></i></a>
+            <a href="https://github.com/salazarioDev" target="_blank"
+              ><i class="fa-brands fa-github"></i
+            ></a>
             <a href="https://www.linkedin.com/in/salazariodev/" target="_blank"
               ><i class="fa-brands fa-linkedin-in"></i
-            ></a>            
+            ></a>
           </div>
           <a href="#" class="btn">Download CV</a>
         </div>
@@ -97,7 +100,7 @@
             <p>
               <span>I transform your ideas into digital experiences.</span>
             </p>
-            <a href="#" class="btn">Read More</a>
+            <a href="#services" class="btn" onclick="openModal()">Read More</a>
           </div>
           <div class="services-box">
             <i class="fas fa-paintbrush"></i>
@@ -117,6 +120,32 @@
           </div>
         </div>
       </section>
+      <div id="webDevelopmentModal" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal()">&times;</span>
+          <div class="modal-container">
+            <div class="modal-image">
+              <img
+                src="./assets/img/webDevelopmentModal.webp"
+                alt="Descripción de la imagen"
+              />
+            </div>
+            <div class="modal-text">
+              <h2><span>Exploring</span> Web Development Further</h2>
+              <p>
+                I build the digital future using the latest technologies. From
+                interactive web applications to robust platforms, I stay at the
+                forefront to turn your visions into reality.
+              </p>
+              <p>
+                Agile web development that adapts to your needs. From conception
+                to implementation, I provide efficient solutions that keep you
+                ahead in a constantly evolving digital world.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
       <section class="portfolio" id="portfolio">
         <h2 class="heading">Latest <span>Project</span></h2>
         <div class="portfolio-container">
@@ -204,17 +233,13 @@
             <input type="email" id="email" placeholder="Email" />
           </div>
           <div class="input-box">
-            <input
-              type="text"
-              id="subject"
-              placeholder="Email Subject"              
-            />
+            <input type="text" id="subject" placeholder="Email Subject" />
           </div>
           <textarea
             id="message"
             cols="30"
             rows="10"
-            placeholder="Your Message"            
+            placeholder="Your Message"
           ></textarea>
           <div class="send-button">
             <button onclick="sendMessage();" class="btn">Send Message</button>
@@ -232,7 +257,7 @@
       <div class="footer-iconTop">
         <a href="#home"><i class="fa-solid fa-arrow-up"></i></a>
       </div>
-    </footer>       
+    </footer>
     <script src="./js/app.js"></script>
   </body>
 </html>
