@@ -13,10 +13,14 @@ function sendMessage() {
         return;
     }
     
-    emailjs.init("${SECRET_TOKEN}");
+    const PUBLIC_KEY = process.env.PUBLIC_KEY;
+    const SERVICE_ID = process.env.SERVICE_ID;
+    const TEMPLATE_ID = process.env.TEMPLATE_ID;
+
+    emailjs.init("${PUBLIC_KEY}");
     
-    var serviceId = "service_ukl92cs";
-    var templateId = "template_8ms7jhn";
+    var serviceId = "${SERVICE_ID}";
+    var templateId = "${TEMPLATE_ID}";
     
     var params = {
         username: username,
