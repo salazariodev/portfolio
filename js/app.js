@@ -13,7 +13,7 @@ function sendMessage() {
         return;
     }
     
-    emailjs.init("hCk4bXxC54xO4aPU2");
+    emailjs.init("${{ secrets.PUBLIC_KEY }}");
     
     var serviceId = "service_ukl92cs";
     var templateId = "template_8ms7jhn";
