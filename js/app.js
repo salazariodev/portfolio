@@ -13,7 +13,7 @@ function sendMessage() {
         return;
     }
     
-    emailjs.init("${{ secrets.PUBLIC_KEY }}");
+    emailjs.init("${SECRET_TOKEN}");
     
     var serviceId = "service_ukl92cs";
     var templateId = "template_8ms7jhn";
