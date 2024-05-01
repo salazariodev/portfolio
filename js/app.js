@@ -17,10 +17,10 @@ function sendMessage() {
     process.env.SERVICE_ID;
     process.env.TEMPLATE_ID;
 
-    emailjs.init("${PUBLIC_KEY}");
+    emailjs.init("PUBLIC_KEY");
     
-    var serviceId = "${SERVICE_ID}";
-    var templateId = "${TEMPLATE_ID}";
+    var serviceId = "SERVICE_ID";
+    var templateId = "TEMPLATE_ID";
     
     var params = {
         username: username,
