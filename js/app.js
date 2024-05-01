@@ -13,9 +13,9 @@ function sendMessage() {
         return;
     }
     
-    const PUBLIC_KEY = process.env.PUBLIC_KEY;
-    const SERVICE_ID = process.env.SERVICE_ID;
-    const TEMPLATE_ID = process.env.TEMPLATE_ID;
+    process.env.PUBLIC_KEY;
+    process.env.SERVICE_ID;
+    process.env.TEMPLATE_ID;
 
     emailjs.init("${PUBLIC_KEY}");
     
